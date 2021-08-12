@@ -14,9 +14,7 @@ int findLastBookNo(void);//to find the number of last book entered
 
 //code to declare file pointer
 FILE * fp, * fp1;
-
 //code to design structure
-
 struct book {
   int bn;//book number
   char title[200];
@@ -138,8 +136,6 @@ void insertData()
   }
 
 }
-
-
 void displayData(void) 
 {
 
@@ -215,6 +211,8 @@ void updateData(int bn)
   }
   // ();
 }
+
+
 void deleteData(int bn) 
 {
   fp = fopen("Book.dat", "r");
